@@ -34,6 +34,11 @@ dependencies {
     implementation 'com.google.guava:guava:30.1.1-jre'
 }
 
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
@@ -41,7 +46,7 @@ tasks.named('test') {
 
 publishing {
     publications {
-        maven(MavenPublication) {
+        mavenJava(MavenPublication) {
             from components.java
         }
     }
