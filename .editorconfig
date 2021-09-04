@@ -10,12 +10,12 @@ trim_trailing_whitespace = true
 end_of_line = crlf
 
 [*.java]
-indent_size = 2
+indent_size = 4
 indent_style = space
 
 [*.md]
 trim_trailing_whitespace = false
 
 [{build.gradle,settings.gradle}]
-indent_size = 2
+indent_size = 4
 indent_style = space
