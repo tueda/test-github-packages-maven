@@ -51,7 +51,7 @@ publishing {
             name = "github"
             url = 'https://maven.pkg.github.com/tueda/test-github-packages-maven'
             credentials {
-                username = System.getenv("GITHUB_USER")
+                username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
             }
         }
